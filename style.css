@@ -1,0 +1,184 @@
+li[data="button"] {    
+    margin:0;
+    padding:10px;
+}
+.overlay{
+    height:50px !important;
+    width:100%;
+    text-align: center;               
+    opacity:0.7;                
+    position:absolute;
+    bottom: 0;
+    display: inline-block;
+    
+}
+.overlay ul{
+    list-style-type: none;
+    text-align: center;
+    padding:0;
+	margin-top: 30px;
+}
+.overlay ul li{
+    display:inline;                  
+}
+.overlay ul li input[type="radio"]{ 
+    cursor:pointer;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 33px;
+    margin-left: -11px;    
+    left: 50%; 
+    bottom:-237px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+   /* background-color: #d1d3d1;*/
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #9AE2F8;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15.0px 15.0px 15.0px 0;
+    border-color: transparent rgb(29, 27, 26) transparent transparent;
+    position:absolute;
+    right:1px;
+    top:10px;
+	left: 185.4px;
+}
+
+.arrowfirst{
+	left: -14.6px;
+	border-top-width: 11px;
+	border-bottom-width: 14px;		
+	top: 60px;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15.0px 15.0px 15.0px 0;
+    border-color: transparent rgb(99, 180, 201) transparent transparent;
+    position:absolute;
+    right:1px;
+}
+
+.arrowmiddle {
+	left: -14.6px;
+	border-top-width: 10px;
+	border-bottom-width: 13px;		
+	top: 135px;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15.0px 15.0px 15.0px 0;
+    border-color: transparent rgb(99, 180, 201) transparent transparent;
+    position:absolute;
+    right:1px;
+}
+
+.arrowlast {
+	left: -14.6px;
+	border-top-width: 11px;
+	border-bottom-width: 14px;		
+	top: 210px;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15.0px 15.0px 15.0px 0;
+    border-color: transparent rgb(99, 180, 201) transparent transparent;
+    position:absolute;
+    right:1px;
+}
+
+.active {
+    background-color: rgb(103, 100, 100);
+    color: #fff;
+}
